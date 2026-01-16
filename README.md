@@ -86,7 +86,7 @@ erDiagram
         decimal TotalAmount
     }
 ### 💻 Tech Stack
-* [cite_start]**Frontend:** HTML5, CSS3, Bootstrap 5.3.3 (Responsive Design)[cite: 114].
+* **Frontend:** HTML5, CSS3, Bootstrap 5.3.3 (Responsive Design).
 * **Backend:** PHP (Native) for server-side logic and database connectivity.
 * **Database:** MySQL / MariaDB.
 * **Server:** Apache (via XAMPP/MAMP).
