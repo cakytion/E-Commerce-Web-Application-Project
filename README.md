@@ -41,7 +41,6 @@ The database models key e-commerce entities: `Customers`, `Products`, `Orders`, 
 
 ### 2. Relational Schema
 The database schema ensures referential integrity and optimized query performance.
-
 erDiagram
     UserRole ||--o{ User : "assigned to"
     UserRole ||--o{ RolePermission : "has"
@@ -86,7 +85,6 @@ erDiagram
         datetime OrderDate
         decimal TotalAmount
     }
-
 ### 💻 Tech Stack
 * [cite_start]**Frontend:** HTML5, CSS3, Bootstrap 5.3.3 (Responsive Design)[cite: 114].
 * **Backend:** PHP (Native) for server-side logic and database connectivity.
