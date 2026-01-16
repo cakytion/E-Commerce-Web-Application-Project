@@ -54,6 +54,7 @@ The system retrieves product data (Name, Price, Image) dynamically from the `Pro
 * **Real-time Stock Display:** Shows `StockQuantity` from database.
 * **User Feedback:** Retrieves customer reviews from `Review` table.
 The database schema ensures referential integrity and optimized query performance.
+
 erDiagram
     UserRole ||--o{ User : "assigned to"
     UserRole ||--o{ RolePermission : "has"
