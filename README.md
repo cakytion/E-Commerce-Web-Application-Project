@@ -42,7 +42,50 @@ The database models key e-commerce entities: `Customers`, `Products`, `Orders`, 
 ### 2. Relational Schema
 The database schema ensures referential integrity and optimized query performance.
 
-![Database Schema](schema.png)
+erDiagram
+    UserRole ||--o{ User : "assigned to"
+    UserRole ||--o{ RolePermission : "has"
+    Permission ||--o{ RolePermission : "contains"
+    
+    User ||--o{ Cart : "owns"
+    User ||--o{ Review : "writes"
+    User ||--o{ Order : "places"
+    
+    Category ||--o{ Product : "categorizes"
+    Product ||--o{ ProductPromotion : "has"
+    Promotion ||--o{ ProductPromotion : "included in"
+    
+    Product ||--o{ CartItem : "added to"
+    Product ||--o{ Review : "reviewed in"
+    Product ||--o{ OrderItem : "ordered in"
+    Product ||--o{ InventoryLog : "logged in"
+
+    Cart ||--o{ CartItem : "contains"
+    
+    Order ||--o{ OrderItem : "contains"
+    Order ||--|| Payment : "paid via"
+    Order ||--|| ShippingDetail : "shipped via"
+    Order ||--o{ TransactionLog : "generates"
+
+    User {
+        int UserID PK
+        string Name
+        string Email
+        string RoleID FK
+    }
+    Product {
+        int ProductID PK
+        string ProductName
+        decimal Price
+        int StockQuantity
+        int CategoryID FK
+    }
+    Order {
+        int OrderID PK
+        int UserID FK
+        datetime OrderDate
+        decimal TotalAmount
+    }
 
 ### 💻 Tech Stack
 * [cite_start]**Frontend:** HTML5, CSS3, Bootstrap 5.3.3 (Responsive Design)[cite: 114].
