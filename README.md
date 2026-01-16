@@ -40,6 +40,19 @@ The database models key e-commerce entities: `Customers`, `Products`, `Orders`, 
 ![ER Diagram](er_diagram.png)
 
 ### 2. Relational Schema
+## 💻 User Interface (Demo)
+Here are screenshots of the developed web application connected to the database.
+
+### 🏠 Home & Product List
+The system retrieves product data (Name, Price, Image) dynamically from the `Product` table.
+
+| Product Catalog | Product Details |
+| :---: | :---: |
+| ![Catalog](ui_home.png) | ![Details](ui_product.png) |
+
+### 🛒 Features
+* **Real-time Stock Display:** Shows `StockQuantity` from database.
+* **User Feedback:** Retrieves customer reviews from `Review` table.
 The database schema ensures referential integrity and optimized query performance.
 erDiagram
     UserRole ||--o{ User : "assigned to"
