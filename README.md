@@ -42,7 +42,7 @@ The database models key e-commerce entities: `Customers`, `Products`, `Orders`, 
 ### 2. Relational Schema
 ## 💻 User Interface (Demo)
 Here are screenshots of the developed web application connected to the database.
-
+### Example
 ### 🏠 Home & Product List
 The system retrieves product data (Name, Price, Image) dynamically from the `Product` table.
 
